@@ -1,0 +1,129 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+    background-color: rgba(251, 245, 245, 0.64);
+    border-radius: 50%;
+    padding: 16px;
+}
+
+#card-container{
+    width: 2.5in;
+    height: 3.5in;
+    border: solid 1px;
+    display: grid;
+    grid-template-columns: 40px 40px 100px 20px 20px 20px;
+    grid-template-rows: 56px 100px 20px 120px 40px;
+    position: relative;
+    border: groove 4px #EAD020;
+    border-radius: 5px;
+}
+
+#card-container div{
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.grid-span-col-6{
+    grid-column: span 6;
+}
+
+.grid-span-col-2{
+    grid-column: span 2;
+}
+
+.grid-span-col-3{
+    grid-column: span 3;
+}
+
+img{
+    width: 70%;
+}
+#card-container .bg-image{
+    position: absolute;
+    z-index: -1;
+}
+
+#card-container .bg-image img{
+    height: 3.5in;
+    width: 2.5in;  
+}
+
+#card-container .class{
+    background-color: rgba(251, 245, 245, 0.7);
+    padding: 0 4px;
+    margin-bottom: 0.5px;
+}
+
+#card-container .ability{
+    background-color: rgba(251, 245, 245, 0.64);
+    border-top-right-radius: 4px ;
+    padding: 0 4px;
+    font-family:'Times New Roman', Times, serif;
+}
+#card-container .level{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#card-container .level img{
+    position: absolute;
+    width: 70%;
+    bottom: 0;
+}
+
+#card-container .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Algerian;
+    line-height: 18px;
+    font-size: 15px;
+    overflow: visible;
+}
+#card-container .name h2{
+    background-color: rgba(251, 245, 245, 0.64);
+    padding: 0 1px;
+    width: fit-content; 
+}
+
+#card-container .attribute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card-container .position img{
+    width: 100%;
+    height: 48px;
+    background-color: rgba(251, 245, 245, 0.64);
+}
+
+#card-container .position{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card-container .points{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 245, 245, 0.64);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-weight: 900;
+}
+#card-container .summoning-crystal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card-container .summoning-crystal img{
+    height: 95%;
+    width: 60%;
+}
