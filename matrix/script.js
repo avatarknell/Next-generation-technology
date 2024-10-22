@@ -21,6 +21,15 @@ let newPosition=document.getElementById('avatarPosition').value;
 let points=document.getElementById('points'); 
 let newPoints=document.getElementById('avatarPoints').value;
 
+let crystal1=document.getElementById("crystal1")
+let crystal2=document.getElementById("crystal2")
+let crystal3=document.getElementById("crystal3")
+
+const bg=document.getElementById("bg")
+let newbg=document.getElementById('newbg').value;
+
+
+let newCrystal=document.getElementById('newCrystal').value;
 const attributes=["Earth","Water","Fire", "Air", "Neutral", "lightning"]
 
 function newCard(){
@@ -29,9 +38,25 @@ function newCard(){
     avatarClass.innerHTML=newCLass;
     ability.innerHTML=newAbility;
     points.innerHTML=newPoints;    
-    attribute.getElementsByTagName('img').className=newAttribute
-    } 
-
+    attribute.classList.add(newAttribute);
+    if(newCrystal==2){
+        crystal1.classList.add("displayNone");
+    }else if(newCrystal==1){
+        crystal1.classList.add("displayNone");
+        crystal2.classList.add("displayNone");    
+    }else if(newCrystal==0){
+        crystal1.classList.add("displayNone");
+        crystal2.classList.add("displayNone");
+        crystal3.classList.add("displayNone");
+    };
+    bg.src=newbg;
+    if(newPosition=="attack"){
+        position.src="/img/attack.png"
+    }else{
+        position.src="/img/defense.png"
+    };
+};
 
 nameBtn.addEventListener('click',newCard);
 
+console.log(crystal1);

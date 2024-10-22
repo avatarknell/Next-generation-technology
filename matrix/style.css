@@ -1,5 +1,5 @@
 body{
-    align-items: center ;
+    display: flex;
 }
 
 body div{
@@ -9,8 +9,7 @@ body div{
 
 h1{
     background-color: rgba(251, 245, 245, 0.64);
-    border-radius: 50%;
-    padding: 16px;
+    padding: 3px 18px;
 }
 
 #card-container{
@@ -23,6 +22,7 @@ h1{
     position: relative;
     border: groove 4px #EAD020;
     border-radius: 5px;
+    margin-left: 20px;
 }
 
 #card-container div{
@@ -45,6 +45,8 @@ h1{
 img{
     width: 70%;
 }
+
+
 #card-container .bg-image{
     position: absolute;
     z-index: -1;
@@ -92,13 +94,57 @@ img{
 #card-container .name h2{
     background-color: rgba(251, 245, 245, 0.64);
     padding: 0 1px;
-    width: fit-content; 
+    width: fit-content;
+    border-radius: 4px; 
 }
 
 #card-container .attribute{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-color: rgba(251, 245, 245, 0.64);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+#card-container .attribute.earth{
+    
+    background-image: url(img/Earth.png);
+   
+}
+#card-container .attribute.fire{
+    
+    background-image: url(img/Fire.png);
+   
+}
+#card-container .attribute.air{
+    
+    background-image: url(img/air.png);
+   
+}
+#card-container .attribute.water{
+    
+    background-image: url(img/Water.png);
+   
+}
+#card-container .attribute.dark{
+    
+    background-image: url(img/dark.png);
+   
+}
+#card-container .attribute.light{
+    
+    background-image: url(img/Light.png);
+   
+}
+#card-container .attribute.neutral{
+    
+    background-image: url(img/neutral.png);
+   
 }
 #card-container .position img{
     width: 100%;
@@ -124,9 +170,16 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 #card-container .summoning-crystal img{
     height: 95%;
     width: 60%;
 }
+
+#card-container .summoning-crystal.displayNone{
+    display: none;
+}
+
 
